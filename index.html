@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfume Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #16161d, #0e0e13);
+      border: 1px solid #222;
+      border-radius: 16px;
+      padding: 20px;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #555;
+    }
+
+    .title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .price {
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #dcdcdc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  PERFUME STORE
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <div class="title">Dior Sauvage</div>
+    <div class="price">1200 лей</div>
+    <button>Купить</button>
+  </div>
+
+  <div class="card">
+    <div class="title">Bleu de Chanel</div>
+    <div class="price">1350 лей</div>
+    <button>Купить</button>
+  </div>
+
+  <div class="card">
+    <div class="title">Tom Ford Lost Cherry</div>
+    <div class="price">1800 лей</div>
+    <button>Купить</button>
+  </div>
+
+</div>
+
+<footer>
+  Premium perfume catalog
+</footer>
+
+</body>
+</html>
