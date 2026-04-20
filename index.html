@@ -2,65 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>V&V Perfume</title>
+
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f0f14;
-      color: white;
-    }
-
-    header {
-      padding: 16px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .subtitle {
-      padding: 0 16px;
-      color: #aaa;
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-
-    .section {
-      padding: 10px 16px;
-      font-weight: bold;
-      margin-top: 10px;
-      color: #ccc;
-    }
-
-    .card {
-      background: #1a1a22;
-      margin: 10px 16px;
-      padding: 14px;
-      border-radius: 14px;
-    }
-
-    .name {
-      font-weight: bold;
-    }
-
-    .desc {
-      font-size: 12px;
-      color: #aaa;
-      margin: 5px 0;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      background: #fff;
-      color: black;
-      font-weight: bold;
-      margin-top: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -114,21 +61,10 @@
   <button onclick="add('Diffuser')">Adaugă</button>
 </div>
 
-<script>
-  const tg = window.Telegram.WebApp;
-  tg.expand();
+<!-- корзина -->
+<div id="cart"></div>
 
-  let cart = [];
-
-  function add(item) {
-    cart.push(item);
-
-    tg.sendData(JSON.stringify({
-      type: "order",
-      items: cart
-    }));
-  }
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
